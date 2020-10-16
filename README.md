@@ -14,11 +14,10 @@
     <a href="https://rocketmusics.herokuapp.com/">Acessar a demonstração</a>
 <h3 >
 -->
-# monorepo-template
+## MONOREPO-TEMPLATE
 
 # Indice
 
-- [monorepo-template](#monorepo-template)
 - [Indice](#indice)
   - [🔖&nbsp; Sobre](#-sobre)
   - [🚀 Tecnologias utilizadas](#-tecnologias-utilizadas)
