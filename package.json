@@ -1,5 +1,5 @@
 {
-  "name": "monorepo-template",
+  "name": "@monorepo/template",
   "version": "1.0.0",
   "private": true,
   "workspaces": {
@@ -8,13 +8,26 @@
       "server"
     ]
   },
-  "license": "MIT",
-  "dependencies": {
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.ts?(x)": "eslint **/**/src/**/* --max-warnings=0 --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "gitmoji-cli": "^3.2.12",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.1"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^11.0.0"
-  }
+  "license": "MIT"
 }
